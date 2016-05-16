@@ -31,12 +31,18 @@ UnicodeCountryFlags.flag_of('cn')  #=> "&#127464;&#127475;"
 Or use the helper, `unicode_country_flag_of`, in view code:
 
 ```ruby
-<ul>
-  <% %w{ us gb au cn jp }.each do |code| -%>
-    <li><%= unicode_country_flag_of(code) %> <%= code.upcase %></li>
-  <% end %>
-</ul>
+<% %w{ US GB AU CN JP }.each do |code| -%>
+  <span><%= unicode_country_flag_of(code) %> <%= code %></span>
+<% end %>
 ```
+
+<p>
+  <span>&#127482;&#127480; US</span>
+  <span>&#127468;&#127463; GB</span>
+  <span>&#127462;&#127482; AU</span>
+  <span>&#127464;&#127475; CN</span>
+  <span>&#127471;&#127477; JP</span>
+</p>
 
 ## Contributing
 
