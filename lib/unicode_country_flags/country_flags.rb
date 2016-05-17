@@ -4,7 +4,12 @@ module UnicodeCountryFlags
       def flag_of(code)
         code = code.to_s.downcase
         return unless code.size == 2
-        code.chars.map { |c| unicodes[c] }.join("")
+        chars = code.chars.map { |c| unicodes[c] }
+        if chars.any?(&:nil?)
+          nil
+        else
+          chars.join
+        end
       end
 
       def unicodes

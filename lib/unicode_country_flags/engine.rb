@@ -1,5 +1,3 @@
-require "unicode_country_flags/helpers"
-
 module UnicodeCountryFlags
   class Engine < ::Rails::Engine
     initializer 'unicode_country_flags.initialize' do
