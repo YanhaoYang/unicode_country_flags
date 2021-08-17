@@ -25,7 +25,7 @@ Or install it yourself as:
 Get the raw code:
 
 ```ruby
-UnicodeCountryFlags.flag_of('cn')  #=> "&#127464;&#127475;"
+UnicodeCountryFlags::CountryFlags.flag_of('cn')  #=> "&#127464;&#127475;"
 ```
 
 Or use the helper, `unicode_country_flag_of`, in view code:
